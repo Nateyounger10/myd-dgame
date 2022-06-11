@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: center;
+            height: 100%;
+
+        }
+
+        html {
+            height: 100%;
+        }
+
+        table {
+            text-align: center;
+            border-color: black;
+        }
+    </style>
+</head>
+
+<body background="dragon.png">
+
+
+
+    <table class="center" style="width:50%;border-color: black;">
+        <tr>
+            <th style="font-size: 30px;color: black">Your health</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px;color:white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px;color:white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: white">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            <th style="font-size: 30px; color: black">Opponent's health</th>
+            <center><button type="button" onclick="smallattack()">Small attack</button>
+                <button type="button" onclick="bigattack()">Big attack</button>
+                <button type="button" onclick="run()">Run</button>
+            </center>
+        </tr>
+        <tr>
+            <td style="font-size: 30px;color: black;" id="p1health">100</td>
+            <td style="font-size: 30px;color: white;" id="p2Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p3score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p1Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p2Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p3score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p1Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p2Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p3score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p1Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p2Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p3score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p1Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p2Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p3score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p1Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p2Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p3score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p1Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p2Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p3score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p1Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p2Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p3score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p1Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p2Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p3score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p1Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p2Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p3score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p1Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p2Score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p3score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p3score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: white;" id="p3score">&nbsp;&nbsp;</td>
+            <td style="font-size: 30px;color: black;" id="comhealth">100</td>
+        </tr>
+    </table>
+</body>
+
+
+<script type="text/javascript">
+
+    function smallattack() {
+        var p1AttackSuccess = 6;
+        var comSmallAttackSuccess = 6;
+        var comBigAttackSuccess = 3;
+        var smallAttackDamage = 5;
+        var comSmallAttackDamage = 7
+        var comBigAttackDamage = 12;
+        var p1Attack = Math.floor(Math.random() * 10);
+        var gameOver = false;
+
+        //Player Attack Turn
+        if (p1Attack <= p1AttackSuccess) {
+            alert("You hit your opponent and did " + smallAttackDamage + " damage")
+            var currentComputerHealth = parseInt(document.getElementById("comhealth").innerHTML);
+            currentComputerHealth = currentComputerHealth - smallAttackDamage;
+            document.getElementById("comhealth").innerHTML = currentComputerHealth;
+
+            if (currentComputerHealth <= 0) {
+                document.write("you won");
+                gameOver = true;
+            }
+        } else {
+            alert("you missed")
+        }
+
+        //Computer Attack Turn
+        if (gameOver != true) { //Computer is alive!
+
+            var p1Health = parseInt(document.getElementById("p1health").innerHTML);
+            var comAttackType = Math.floor(Math.random() * 2) + 1;
+            if (comAttackType == 1) { //small attack
+                var comDamage = Math.floor(Math.random() * 10);
+                if (comDamage <= comSmallAttackSuccess) {
+                    alert("Your opponent hit you and did " + comSmallAttackDamage + " damage")
+                    p1Health = p1Health- comSmallAttackDamage;
+                    document.getElementById("p1health").innerHTML = p1Health;
+                    if (p1Health <= 0) {
+                        document.write("You lose");
+                        gameOver = true;
+                    }
+                } else if (comDamage >= comBigAttackSuccess) {
+                    alert("Your opponent tried to hit you but missed");
+                }
+            } else if (comAttackType == 2) { //big attack
+                // {
+                //     if (comDamage <= 0) document.write("You win")
+                // }
+                var comDamage2 = Math.floor(Math.random() * 10);
+                if (comDamage2 <= comBigAttackSuccess) {
+                    alert("Your opponent hit you and did 12 damage")
+                    var p1Health = p1Health - comBigAttackDamage;
+                    document.getElementById("p1health").innerHTML = p1Health;
+                    if (p1Health <= 0) {
+                        document.write("You lose");
+                        gameOver = true;
+                    }
+                } else {
+                    alert("Your opponent tried to hit you but missed");
+                }
+            } else {
+                alert("No attack type defined for " + comAttackType);
+            }
+        }
+
+
+    }
+
+    
+    function bigattack() {
+        var p1AttackSuccess = 3;
+        var comSmallAttackSuccess = 6;
+        var comBigAttackSuccess = 3;
+        var comSmallAttackDamage = 7;
+        var bigAttackDamage = 10;
+        var comBigAttackDamage = 12;
+        var p1Attack = Math.floor(Math.random() * 10);
+        var gameOver = false;
+
+        //Player Attack Turn
+        if (p1Attack <= p1AttackSuccess) {
+            alert("You hit your opponent and did " + bigAttackDamage + " damage")
+            var currentComputerHealth = parseInt(document.getElementById("comhealth").innerHTML);
+            currentComputerHealth = currentComputerHealth - bigAttackDamage;
+            document.getElementById("comhealth").innerHTML = currentComputerHealth;
+
+            if (currentComputerHealth <= 0) {
+                document.write("you won");
+                gameOver = true;
+            }
+        } else {
+            alert("you missed")
+        }
+
+        //Computer Attack Turn
+        if (gameOver != true) { //Computer is alive!
+
+            var p1Health = parseInt(document.getElementById("p1health").innerHTML);
+            var comAttackType = Math.floor(Math.random() * 2) + 1;
+            if (comAttackType == 1) { //small attack
+                var comDamage = Math.floor(Math.random() * 10);
+                if (comDamage <= comSmallAttackSuccess) {
+                    alert("Your opponent hit you and did " + comSmallAttackDamage + " damage")
+                    p1Health = p1Health- comSmallAttackDamage;
+                    document.getElementById("p1health").innerHTML = p1Health;
+                    if (p1Health <= 0) {
+                        document.write("You lose");
+                        gameOver = true;
+                    }
+                } else if (comDamage >= comBigAttackSuccess) {
+                    alert("Your opponent tried to hit you but missed");
+                }
+                else {
+                    alert("hi")
+                }
+            } else if (comAttackType == 2) { //big attack
+                // {
+                //     if (comDamage <= 0) document.write("You win")
+                // }
+                var comDamage2 = Math.floor(Math.random() * 10);
+                if (comDamage2 <= comBigAttackSuccess) {
+                    alert("Your opponent hit you and did 12 damage")
+                    var p1Health = p1Health - comBigAttackDamage;
+                    document.getElementById("p1health").innerHTML = p1Health;
+                    if (p1Health <= 0) {
+                        document.write("You lose");
+                        gameOver = true;
+                    }
+                } else {
+                    alert("Your opponent tried to hit you but missed");
+                }
+            } else {
+                alert("No attack type defined for " + comAttackType);
+            }
+        
+    }
+}
+
+
+
+    function run() {
+        var run = Math.floor(Math.random() * 10)
+        if (run <= 5)
+            alert("you ran away successfully")
+        if (run >= 6)
+            alert("you failed to run away and died")
+    }
+    function run2() {
+        var run2 = Math.floor(Math.random() * 10)
+        if (run2 == 2) {
+            var run23 = Math.floor(Math.random() * 5)
+            if (run23 == 1) {
+                alert("Your opponent ran away and you couldn't catch them")
+            }
+            else if (run23 >= 2) {
+                alert("Your opponent tried to run away but failed, you hit them in the back and did 5 damage.")
+                var currenthealth3 = parseInt(document.getElementById("comhealth").innerHTML) - 5;
+                document.getElementById("comhealth").innerHTML = currenthealth3;
+            }
+
+        }
+
+    }
+    function loading() {
+        var load2 = run2()
+    }
+    window.onload = loading()
+
+
+
+
+</script>
+
+
+
+</html>

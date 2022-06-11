@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button id="hi"  onclick="hide()">hi</button>
+        <button style="display: none;" id="hi2" onclick="inhide()">hihi</button>
+    </body>
+    <script>
+        function hide() {
+         document.getElementById("hi2").style.display = "block"
+         document.getElementById("hi").style.display = "none"
+            
+        }       
+        function inhide() {
+         document.getElementById("hi").style.display = "block"
+         document.getElementById("hi2").style.display = "none"
+            
+        }       
+    </script>
+</html>

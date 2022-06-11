@@ -1,0 +1,32 @@
+<html>
+
+<head>
+
+    <script type="text/javascript">
+        function randomScore() {
+
+            //Calculate a random number between 1 and 5
+            var score = Math.floor(Math.random() * 20);
+            //alert("The random score is " + score);
+            //console.log("The random score is " + score);
+            if (score >= 10) {
+                document.getElementById("p1Score").innerHTML = "Your score is You WIN!";
+            } else {
+                document.getElementById("p1Score").innerHTML = "Your score is You LOSE!";
+            }
+        console.log("wazzzzzz uuuuuuuup");
+        }  
+    console.log("hello world");
+    </script>
+
+</head>
+
+<body>
+    <p>Welcome to JavaScript</p>
+    <form>
+        <input type="button" value="click" onclick="randomScore()" />
+    </form>
+    <p id="pScore">  </p>
+</body>
+
+</html>

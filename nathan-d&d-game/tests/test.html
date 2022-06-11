@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script type="text/javascript">
+        function test() {
+            var score234 = 0;
+            console.log('score234 is ' + score234);
+            score234 = Math.floor(Math.random() * 3)
+            console.log('score234 is ' + score234);
+ 
+            if (score234 == 2) {
+                alert("your opponent is taking a 3")
+                var percentage = Math.floor(Math.random() * 100)
+                console.log('percentage is ' + percentage);
+                if (score <= 54) {
+                    alert("they missed the shot");
+                } else if (score >= 93) {
+                    alert(" you blocked them.yay!");
+                } else {
+                    alert("they made the shot.boo!");
+                    var currentScore = parseInt(document.getElementById("p1Score").innerHTML);
+                    document.getElementById("p1Score").innerHTML = currentScore + 3;
+                    //document.getElementById("3point").disabled = false;
+                    //document.getElementById("drive").disabled = false;
+                    //document.getElementById("midrange").disabled = false;
+                }
+                alert("the number is " + score);
+            }
+            else if (score234 == 1) {
+                alert("your opponent is taking a mid-ranger")
+                var score = Math.floor(Math.random() * 100);
+                if (score <= 49) {
+                    alert("they missed the shot");
+                } else if (score >= 93) {
+                    alert("you blocked them.yay!");
+                } else {
+                    alert("they made the shot. boo!");
+                    var currentScore = parseInt(document.getElementById("p1Score").innerHTML);
+                    document.getElementById("p1Score").innerHTML = currentScore + 2;
+                    //document.getElementById("3point").disabled = false;
+                    //document.getElementById("drive").disabled = false;
+                    //document.getElementById("midrange").disabled = false;
+                }
+            }
+
+            else {
+                alert("your opponent is taking a layup")
+                var score = Math.floor(Math.random() * 100);
+                if (score <= 37) {
+                    alert("they missed the shot");
+                } else if (score >= 87) {
+                    alert(" you block them. yay!");
+                } else {
+                    alert("they made the shot. boo!");
+                    var currentScore = parseInt(document.getElementById("p1Score").innerHTML);
+                    document.getElementById("p1Score").innerHTML = currentScore + 2;
+                    //document.getElementById("3point").disabled = true;
+                    //document.getElementById("drive").disabled = true;
+                    //document.getElementById("midrange").disabled = true;
+
+                }
+            }
+            var score = Math.floor(Math.random() * 100);
+            if (score <= 37) {
+                alert("they missed the shot");
+            } else if (score >= 87) {
+                alert(" you block them. yay!");
+            } else {
+                alert("they made the shot. boo!");
+                var currentScore = parseInt(document.getElementById("p1Score").innerHTML);
+                document.getElementById("p1Score").innerHTML = currentScore + 2;
+                //document.getElementById("3point").disabled = false;
+                //document.getElementById("drive").disabled = false;
+                //document.getElementById("midrange").disabled = false;
+
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <p>Welcome to JavaScript</p>
+    <form>
+        <input type="button" value="3 pointer" onclick="test()" />
+    </form>
+    <p id="pScore"> </p>
+</body>
+
+</html>

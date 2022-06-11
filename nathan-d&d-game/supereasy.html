@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    function 
+
+    <script type="text/javascript">
+        function randomScore() {
+            var score = Math.floor(Math.random() * 100);
+
+            if (score <= 54) {
+                alert("you missed the shot");
+            } else if (score >= 93) {
+                alert("you got blocked");
+            } else {
+                alert("you made the shot. yay!");
+                var currentScore = parseInt(document.getElementById("p2Score").innerHTML) + 3;
+                document.getElementById("p2Score").innerHTML = currentScore;
+                if (currentScore >= 21) {
+                    document.write("You Win!");
+                    document.getElementById("3point").disabled = true;
+                    document.getElementById("drive").disabled = true;
+                    document.getElementById("midrange").disabled = true;
+                }
+            }
+            var score234 = 0;
+            console.log("score234 is " + score234);
+            score234 = Math.floor(Math.random() * 3)
+            console.log('score234 is ' + score234);
+
+            if (score234 == 2) {
+                alert("your opponent is taking a 3")
+                var percentage = Math.floor(Math.random() * 100)
+                console.log('percentage is ' + percentage);
+                if (score <= 54) {
+                    alert("they missed the shot");
+                } else if (score >= 93) {
+                    alert(" you blocked them.yay!");
+                } else {
+                    alert("they made the shot.boo!");
+                    var currentScore = parseInt(document.getElementById("p1Score").innerHTML) + 3;
+                    document.getElementById("p1Score").innerHTML = currentScore;
+                    if (currentScore >= 21) {
+                        document.write("You Lose!");
+                        document.getElementById("3point").disabled = true;
+                        document.getElementById("drive").disabled = true;
+                        document.getElementById("midrange").disabled = true;
+                    }
+
+
+                }
+            }
+            else if (score234 == 1) {
+                alert("your opponent is taking a mid-ranger")
+                var score = Math.floor(Math.random() * 100);
+                if (score <= 49) {
+                    alert("they missed the shot");
+                } else if (score >= 93) {
+                    alert("you blocked them.yay!");
+                } else {
+                    alert("they made the shot. boo!");
+                    var currentScore = parseInt(document.getElementById("p1Score").innerHTML) + 2;
+                    document.getElementById("p1Score").innerHTML = currentScore;
+                    if (currentScore >= 21) {
+                        document.write("You Lose!");
+                        document.getElementById("3point").disabled = true;
+                        document.getElementById("drive").disabled = true;
+                        document.getElementById("midrange").disabled = true;
+                    }
+
+
+                }
+            }
+
+            else {
+                alert("your opponent is taking a layup")
+                var score = Math.floor(Math.random() * 100);
+                if (score <= 37) {
+                    alert("they missed the shot");
+                } else if (score >= 87) {
+                    alert(" you block them. yay!");
+                } else {
+                    alert("they made the shot. boo!");
+                    var currentScore = parseInt(document.getElementById("p1Score").innerHTML) + 2;
+                    document.getElementById("p1Score").innerHTML = currentScore;
+                    if (currentScore >= 21) {
+                        alert("You Lose!");
+                        document.getElementById("3point").disabled = true;
+                        document.getElementById("drive").disabled = true;
+                        document.getElementById("midrange").disabled = true;
+                    }
+
+
+
+                }
+            }
+        }
+        function randomScore2() {
+            var score = Math.floor(Math.random() * 100);
+            //alert("you scored " + score)
+            if (score <= 49) {
+                alert("you missed the shot");
+            } else if (score >= 93) {
+                alert("you got blocked");
+            } else {
+                alert("you made the shot. yay!");
+                var currentScore = parseInt(document.getElementById("p2Score").innerHTML) + 2;
+                document.getElementById("p2Score").innerHTML = currentScore;
+                if (currentScore >= 21) {
+                    document.write("You Win!");
+                    document.getElementById("3point").disabled = true;
+                    document.getElementById("drive").disabled = true;
+                    document.getElementById("midrange").disabled = true;
+                }
+            }
+            var score234 = 0;
+            console.log('score234 is ' + score234);
+            score234 = Math.floor(Math.random() * 3)
+            console.log('score234 is ' + score234);
+
+            if (score234 == 2) {
+                alert("your opponent is taking a 3")
+                var percentage = Math.floor(Math.random() * 100)
+                console.log('percentage is ' + percentage);
+                if (score <= 54) {
+                    alert("they missed the shot");
+                } else if (score >= 93) {
+                    alert(" you blocked them.yay!");
+                } else {
+                    alert("they made the shot.boo!");
+                    var currentScore = parseInt(document.getElementById("p1Score").innerHTML) + 3;
+                    document.getElementById("p1Score").innerHTML = currentScore;
+                    if (currentScore >= 21) {
+                        document.write("You Lose!");
+                        document.getElementById("3point").disabled = true;
+                        document.getElementById("drive").disabled = true;
+                        document.getElementById("midrange").disabled = true;
+                    }
+
+
+                }
+            }
+            else if (score234 == 1) {
+                alert("your opponent is taking a mid-ranger")
+                var score = Math.floor(Math.random() * 100);
+                if (score <= 49) {
+                    alert("they missed the shot");
+                } else if (score >= 93) {
+                    alert("you blocked them.yay!");
+                } else {
+                    alert("they made the shot. boo!");
+                    var currentScore = parseInt(document.getElementById("p1Score").innerHTML) + 2;
+                    document.getElementById("p1Score").innerHTML = currentScore;
+                    if (currentScore >= 21) {
+                        document.write("You Lose!");
+                        document.getElementById("3point").disabled = true;
+                        document.getElementById("drive").disabled = true;
+                        document.getElementById("midrange").disabled = true;
+                    }
+
+
+                }
+            }
+
+            else {
+                alert("your opponent is taking a layup")
+                var score = Math.floor(Math.random() * 100);
+                if (score <= 37) {
+                    alert("they missed the shot");
+                } else if (score >= 87) {
+                    alert(" you block them. yay!");
+                } else {
+                    alert("they made the shot. boo!");
+                    var currentScore = parseInt(document.getElementById("p1Score").innerHTML) + 2;
+                    document.getElementById("p1Score").innerHTML = currentScore;
+                    if (currentScore >= 21) {
+                        document.write("You Lose!");
+                        document.getElementById("3point").disabled = true;
+                        document.getElementById("drive").disabled = true;
+                        document.getElementById("midrange").disabled = true;
+                    }
+
+
+
+                }
+            }
+        }
+        function randomScore3() {
+            var score = Math.floor(Math.random() * 100);
+            //alert("you scored " + score)
+            if (score <= 37) {
+                alert("you missed the shot");
+            } else if (score >= 87) {
+                alert("you got blocked");
+            } else {
+                alert("you made the shot. yay!");
+                var currentScore = parseInt(document.getElementById("p2Score").innerHTML) + 2;
+                document.getElementById("p2Score").innerHTML = currentScore;
+                if (currentScore >= 21) {
+                    document.write("You Win!");
+                    document.getElementById("3point").disabled = true;
+                    document.getElementById("drive").disabled = true;
+                    document.getElementById("midrange").disabled = true;
+                }
+
+            }
+            var score234 = 0;
+            console.log('score234 is ' + score234);
+            score234 = Math.floor(Math.random() * 3)
+            console.log('score234 is ' + score234);
+
+            if (score234 == 2) {
+                alert("your opponent is taking a 3")
+                var percentage = Math.floor(Math.random() * 100)
+                console.log('percentage is ' + percentage);
+                if (score <= 59) {
+                    alert("they missed the shot");
+                } else if (score >= 93) {
+                    alert(" you blocked them.yay!");
+                } else {
+                    alert("they made the shot.boo!");
+                    var currentScore = parseInt(document.getElementById("p1Score").innerHTML) + 3;
+                    document.getElementById("p1Score").innerHTML = currentScore;
+                    if (currentScore >= 21) {
+                        document.write("You Lose!");
+                        document.getElementById("3point").disabled = true;
+                        document.getElementById("drive").disabled = true;
+                        document.getElementById("midrange").disabled = true;
+                    }
+
+
+                }
+            }
+            else if (score234 == 1) {
+                alert("your opponent is taking a mid-ranger")
+                var score = Math.floor(Math.random() * 100);
+                if (score <= 54) {
+                    alert("they missed the shot");
+                } else if (score >= 93) {
+                    alert("you blocked them.yay!");
+                } else {
+                    alert("they made the shot. boo!");
+                    var currentScore = parseInt(document.getElementById("p1Score").innerHTML) + 2;
+                    document.getElementById("p1Score").innerHTML = currentScore;
+                    if (currentScore >= 21) {
+                        document.write("you Lose!")
+                        document.getElementById("3point").disabled = true;
+                        document.getElementById("drive").disabled = true;
+                        document.getElementById("midrange").disabled = true;
+                    }
+
+
+                }
+            }
+
+            else {
+                alert("your opponent is taking a layup")
+                var score = Math.floor(Math.random() * 100);
+                if (score <= 42) {
+                    alert("they missed the shot");
+                } else if (score >= 87) {
+                    alert(" you block them. yay!");
+                } else {
+                    alert("they made the shot. boo!");
+                    var currentScore = parseInt(document.getElementById("p1Score").innerHTML) + 2;
+                    var nextscore = parseInt(document.getElementById("p3score").innerHTML) + 21;
+                    document.getElementById("p1Score").innerHTML = currentScore;
+                    if (currentScore >= 21) {
+                        document.write("you Lose!");
+                        document.getElementById("3point").disabled = true;
+                        document.getElementById("drive").disabled = true;
+                        document.getElementById("midrange").disabled = true;
+                    }
+                    document.getElementById("p3score").innerHTML = nextscore;
+                    if (nextscore >= 21) {
+                        document.write("someone else joined the game and one before you");}
+
+
+
+
+                }
+            }
+        }
+
+
+    </script>
+    <style>
+        table {
+
+            text-align: center;
+            border-collapse: collapse;
+            border: 10px solid black;
+            width: "100%";
+        }
+
+
+
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body background="./images/basketball14.jpg" background-position="center" background-repeat="no-repeat";>
+    <h1 style="color: white;" >Nathan's basketball game</h1>
+    <table class="center" style="width:50%;border-color: white;">
+        <tr>
+            <th style="font-size: 30px;color: white" >com</th>
+            <th style="font-size: 30px; color: white" >P1</th>
+            <th style="font-size: 30px;color:blueviolet">p2</th>
+            <center><button style="height:50px;width:200px;font-size:40px ;" id="3point" type: button
+                    onclick="randomScore()">3 pointer</button>
+                <button style="height:50px;width:200px;font-size:40px ;" id="midrange" type: button
+                    onclick="randomScore2()">mid-range</button>
+                <button style="height:50px;width:200px;font-size:40px ;" id="drive" type: button
+                    onclick="randomScore3()">layup/dunk</button>
+            </center>
+        </tr>
+        <tr>
+            <td  style="font-size: 30px;color: white;" id="p1Score">0</td>
+            <td style="font-size: 30px;color: white;" id="p2Score">0</td>
+            <td style="font-size: 30px;color: brown;" id="p3score">0</td>
+        </tr>
+    </table>
+    <p id="score2" </body>
+        
+        <center><a href="./index.html"><button style="height: 30px;width: 100px;font-size: 20px;" >restart</button></a></center>
+
+</html>

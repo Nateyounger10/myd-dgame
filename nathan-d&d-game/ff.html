@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<p>Click the button to swap the text of the DIV element:</p>
+
+<button onclick="myFunction()">Click Me</button>
+<button id="hi" style="display: none;">hi</button>
+<div id="myDIV">Hello</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "Hello") {
+    x.innerHTML = "Swapped text!";
+    document.getElementById("hi").style.display = "block";
+  } else {
+    x.innerHTML = "Hello";
+  }
+}
+</script>
+
+</body>
+</html>
